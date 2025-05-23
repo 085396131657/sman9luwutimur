@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Penghitung Nilai Raport</title>
+</head>
+<body>
+
+ <marquee size ="20000" <h1>MENGHITUNG NILAI RATA-RATA PENGETAHUAN</h1> </marquee>
+<body style="background-color: yellow;"></body
+  <!--First section-->
+
+  <br>
+  </div>
+  
+<table>
+<table style="margin-left:auto;margin-right:auto" border="0">
+
+<tr>
+  <div>
+    <td><label for="nilai_matematika">Matematika:</label></td>
+    <td><input type="number" id="nilai_matematika" name="nilai_matematika" required></td>
+  </div>
+  </tr>
+  
+  <tr>
+   <div>
+   <td> <label for="nilai_kimia">Kimia:</label></td>
+   <td> <input type="number" id="nilai_kimia" name="nilai_kimia" required></td>
+  </div>
+  </tr>
+  
+   <tr>
+   <div>
+    <td><label for="nilai_fisika">Fisika:</label></td>
+   <td><input type="number" id="nilai_fisika" name="nilai_fisika" required></td>
+  </div>
+  </tr>
+  
+  <tr>
+   <div>
+    <td><label for="nilai_ppkn">PPKN:</label></td>
+    <td><input type="number" id="nilai_ppkn" name="nilai_ppkn " required></td>
+  </div>
+  </tr>
+  
+  <tr>
+   <div>
+    <td><label for="nilai_sejarah">Sejarah:</label></td>
+    <td><input type="number" id="nilai_sejarah" name="nilai_sejarah" required></td>
+  </div>
+  </tr>
+  
+  <tr>
+   <div>
+    <td><label for="nilai_informatika">Informatka:</label></td>
+    <td><input type="number" id="nilai_informatika" name="nilai_informatika" required></td>
+  </div>
+  </tr>
+  
+  <tr>
+   <div>
+    <td><label for="nilai_penjas">Penjas:</label></td>
+    <td><input type="number" id="nilai_penjas" name="nilai_penjas" required></td>
+  </div>
+  </tr>
+  
+  <tr>
+     <div>
+    <td><label for="nilai_seni">Seni:</label></td>
+    <td><input type="number" id="nilai_seni" name="nilai_seni" required></td>
+  </div>
+  </tr>
+  
+  <tr>
+    <div>
+    <td><label for="nilai_bahasa_indonesia">Bahasa_Indonesia:</label></td>
+    <td><input type="number" id="nilai_bahasa_indonesia" name="nilai_bahasa_indonesia" required></td>
+  </div>
+  </tr>
+  
+   <tr>
+    <div>
+    <td><label for="prakarya">Prakarya:</label></td>
+    <td><input type="number" id="nilai_Prakarya" name="nilai_Prakarya" required></td>
+  </div>
+  </tr>
+  
+   <tr>
+    <div>
+    <td><label for="nilai_Agama">Agama:</label></td>
+    <td><input type="number" id="nilai_Agama" name="nilai_Agama" required></td>
+  </div>
+  </tr>
+  
+   <tr>
+    <div>
+    <td><label for="nilai_Ekonomi">Ekonomi:</label></td>
+    <td><input type="number" id="nilai_Ekonomi" name="nilai_Ekonomi" required></td>
+  </div>
+  </tr>
+  
+  <tr>
+  <div>
+    <td><label for="nilai_Sosiologi">Sosiologi:</label></td>
+    <td><input type="number" id="nilai_Sosiologi" name="nilai_Sosiologi" required></td>
+  </div>
+  </tr>
+  </table>
+  
+  <table style="margin-left:auto;margin-right:auto" border="0">
+ <td> <button onclick="hitungNilai()">Hitung Rata-rata</button></td>
+<td></td>
+<td> <div id="hasil"> 
+	<p>Rata-Rata-Nilai: <span id="rata_rata"></span></p></td>
+	
+	 <tr>
+  <div>
+    <TD><a href="MENU UTAMA.html" >KEMBALI KEMENU UTAMA</a></TD> |
+  </div>
+  </tr>
+  </table>
+	
+	 
+	</table>
+	</div>
+  </div>
+ <!--First section-->
+  <div style="background-image: url('images.jpg'); 
+  background-size: cover; height:20px; padding-top:1 px;">
+  <script>
+    function hitungNilai() {
+      var nilai_matematika = parseFloat(document.getElementById("nilai_matematika").value);
+	   var nilai_kimia = parseFloat(document.getElementById("nilai_kimia").value);
+	    var nilai_fisika = parseFloat(document.getElementById("nilai_fisika").value);
+		var nilai_ppkn = parseFloat(document.getElementById("nilai_ppkn").value);
+		 var nilai_sejarah = parseFloat(document.getElementById("nilai_sejarah").value);
+		var nilai_informatika = parseFloat(document.getElementById("nilai_informatika").value);
+	    var nilai_penjas = parseFloat(document.getElementById("nilai_penjas").value);
+	   var nilai_seni = parseFloat(document.getElementById("nilai_seni").value);
+      var nilai_bahasa_indonesia = parseFloat(document.getElementById("nilai_bahasa_indonesia").value);
+      	 var nilai_Prakarya = parseFloat(document.getElementById("nilai_Prakarya").value);
+	 var nilai_Agama = parseFloat(document.getElementById("nilai_Agama").value);
+	 var nilai_Ekonomi = parseFloat(document.getElementById("nilai_Ekonomi").value);
+	 var nilai_Sosiologi = parseFloat(document.getElementById("nilai_Sosiologi").value);
+	 
+	  var total = nilai_matematika + nilai_kimia + nilai_fisika + nilai_ppkn + nilai_sejarah + nilai_informatika + nilai_penjas + nilai_seni + nilai_bahasa_indonesia + nilai_Prakarya +nilai_Agama + nilai_Ekonomi + nilai_Sosiologi;
+      var rata_rata = total/13;
+	 document.getElementById("rata_rata").textContent = rata_rata.toFixed(2);
+    }
+  </script>
+</br>
+</body>
+</html>
